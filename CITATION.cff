@@ -1,19 +1,15 @@
 cff-version: 1.2.0
 message: "If you use these materials in teaching, research, or derived work, please cite as below."
-title: "[[ Course title ]]"
-abstract: "[[ One-paragraph description of the course and what it teaches. ]]"
+title: "SU511 Social Pharmacy"
+abstract: "This repository features a demo for creating a sub-cohort from a large simulated EpiCore data set, coded in R."
 authors:
-  - family-names: "[[ Surname ]]"
-    given-names: "[[ Given name ]]"
-    affiliation: "CPDSE, [[ University of Copenhagen / University of Southern Denmark ]]"
-    orcid: "https://orcid.org/0000-0000-0000-0000"
+  - family-names: "Mittenentzwei"
+    given-names: "Sarah"
+    affiliation: "CPDSE, University of Southern Denmark"
 version: "2026.1"
-date-released: "2026-02-01"
+date-released: "2026-11-23"
 license: CC-BY-4.0
-url: "https://github.com/[[ your-org ]]/[[ your-repo ]]"
+url: "https://github.com/CPDSE-EDUX/SDU-BSc-SU511-Social-Pharmacy"
 keywords:
-  - teaching
   - pharmaceutical data science
-  - CPDSE
-  - "[[ domain keyword e.g. cheminformatics ]]"
-  - "[[ method keyword e.g. machine-learning ]]"
+  - social pharmacy

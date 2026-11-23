@@ -11,10 +11,11 @@ This repository features a demo for creating a sub-cohort from a large simulated
 ```
 ├── scripts/
 │   ├── SU511.qmd/
+│   ├── SU511_helpers.R/
 │   └── SU511_cohort.R/
 └── README.md
 ```
-Use `SU511.qmd` to change filters and see the histogram. You do not need to touch `SU511_cohort.R` unless you want to change how the filtering works.
+Use `SU511.qmd` to change filters and see the histogram. You do not need to touch `SU511_helpers.R` and `SU511_cohort.R` unless you want to change how the filtering works.
 
 ## Setup
 
