@@ -1,7 +1,7 @@
 cff-version: 1.2.0
 message: "If you use these materials in teaching, research, or derived work, please cite as below."
-title: "[[ Course title ]]"
-abstract: "[[ One-paragraph description of the course and what it teaches. ]]"
+title: "SU511 Social Pharmacy"
+abstract: "This repository features a demo for creating a sub-cohort from a large simulated EpiCore data set, coded in R."
 authors:
   - family-names: "Mittenentzwei"
     given-names: "Sarah"
