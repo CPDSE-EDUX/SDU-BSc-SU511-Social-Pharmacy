@@ -1,0 +1,59 @@
+---
+title: "SU511: Building a cohort"
+format:
+  html:
+    toc: true
+execute:
+  warning: false
+  message: false
+editor_options: 
+  chunk_output_type: inline
+---
+
+# Filter Variables
+
+```{r}
+source("SU511_helpers.R")   
+
+# open_dataset(file.path(data_dir, "drug")) %>% names()
+
+#open_dataset(file.path(data_dir, "cancer")) %>%
+#+     count(id, sort = TRUE) %>%
+#+     collect()
+
+# Number / "Male", "Female" / Diagnosis ICD-10 pattern(s) or NULL
+# diagnosis starts with ^ if general code category
+# multiple entries with c("A", "B"), e.g. c("^I10", "^E11"), c("A10BA02", "C09AA05")
+# several codes: "any" = at least one of them, "all" = every one of them
+# custom_filter <- include_any("cancer", ccode, "^C50")
+# custom_filter <- include_all("drug", atc, c("A10BA02", "C09AA05"))
+# custom_filter <- list(include_any("drug", atc, "A10BA02"), exclude_any("cancer"))
+
+data_dir       <- "synthetic_cdm_run1_copy"   #insert file path
+reference_date <- as.Date("2020-01-01")       # age is calculated on this date
+sex_colours    <- c(Male = "steelblue", Female = "firebrick")
+bin_width      <- 5                         # bin size in years
+
+sex_keep <- NULL
+age_min  <- NULL                   
+age_max  <- 50    
+
+diagnosis_icd_any <- NULL
+diagnosis_icd_all <- NULL #c("^G43", "G444")
+diagnosis_icd_exclude <- NULL
+
+drug_atc_any <- "N02CC01" #c("N0AX02", "N02AA05")
+drug_atc_all <- NULL #c("N02CC01", "C07AA05")
+drug_atc_exclude <- NULL
+
+custom_filter <- NULL # list(include_any("drug", column, "value"), exclude_any(...))
+custom_filter_label <- "describe it here"   # shown under the plot
+```
+
+```{r}
+#| fig-height: 5.5
+#| fig-width: 9
+#| out-width: 100%
+
+source("SU511_cohort.R", local = TRUE)
+```
