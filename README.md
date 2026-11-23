@@ -2,6 +2,8 @@
 
 This repository features a demo for creating a sub-cohort from a large simulated data set, coded in R.
 
+![Histogram](https://raw.githubusercontent.com/CPDSE-EDUX/SDU-BSc-SU511-Social-Pharmacy/refs/heads/main/histogram.png)
+
 ## Data Science Learning Outcomes
 * Extract data from a cohort dataset
 * Evaluate results visually (histogram)
